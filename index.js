@@ -21,7 +21,9 @@ app.get('/getHome', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getFullInfo', (req, res, next) => {
@@ -33,7 +35,9 @@ app.get('/getFullInfo', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getDetailPlaylist', (req, res, next) => {
@@ -45,7 +49,9 @@ app.get('/getDetailPlaylist', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/search', (req, res, next) => {
@@ -57,7 +63,9 @@ app.get('/search', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getChartHome', (req, res, next) => {
@@ -68,7 +76,9 @@ app.get('/getChartHome', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getWeekChart', (req, res, next) => {
@@ -80,7 +90,9 @@ app.get('/getWeekChart', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getNewReleaseChart', (req, res, next) => {
@@ -91,7 +103,9 @@ app.get('/getNewReleaseChart', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getTop100', (req, res, next) => {
@@ -102,7 +116,9 @@ app.get('/getTop100', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
 
 app.get('/getDetailArtist', (req, res, next) => {
@@ -114,5 +130,7 @@ app.get('/getDetailArtist', (req, res, next) => {
         console.log('Done')
         res.json(result)
     })
-    .catch(next)
+    .catch(e => {
+        next(JSON.stringify(e))
+    })
 })
